@@ -15,3 +15,12 @@ create table codex_config
     constraint codex_config_pk
         primary key (key_config)
 );
+
+create table codex_laws
+(
+    key_law varchar(1000) not null,
+    program text null,
+    data json not null,
+    constraint codex_laws_pk
+        primary key (key_law)
+);
